@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    height: 2.5em;
+    width: 100%;
+    font-size: 13px;
+    padding-left: 0.5em;
+    border: 1px solid #cecece;
+}
+
+label {
+    font-size: 13px;
+}
+
+.swal2-title {
+    font-size: 1em;
+}
+
+.swal2-icon {
+    font-size: 1em;
+}
+
+.custom-tooltip .p-tooltip-text {
+    padding: 8px 12px !important; 
+    background-color: #616060;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  

@@ -1,7 +1,42 @@
-<div
-    class="flex justify-center items-center h-screen w-screen bg-[url('/assets/img/bk-grandetemplo.jpg')] container-autenticacao opacity-50 bg-cover bg-center">
-    <div class="flex justify-center items-center container-formulario w-full rounded-xl">
-        <div class="w-50 bg-red-500 w-[400px] h-[500px] rounded-bl-xl rounded-tl-xl"></div>
-        <div class="w-50 bg-white w-[400px] h-[500px] rounded-br-xl rounded-tr-xl"></div>
+<div class="flex justify-center items-center h-screen w-screen container-autenticacao bg-cover bg-center relative">
+    <div class="absolute inset-0 flex items-center bg-[url('/assets/img/bk-grandetemplo.jpg')] bg-cover bg-center">
+        <div class="flex justify-center items-center container-formulario w-full rounded-xl">
+            <div
+                class="relative flex-col flex bg-red-500 w-[300px] opacity-90 items-center shadow-lg h-[450px] rounded-tr-[70px] rounded-tl-[10px] rounded-br-[10px] rounded-bl-[70px]">
+                <!-- <div class="container-logo">
+                    <img src="/assets/img/logo.png" class="w-[120px] mt-8 h-[100px]" alt="">
+                </div>
+                <div class="container-campos w-full pl-10 pr-10 mt-2">
+                    <div class="flex flex-col container-usuario">
+                        <label for="usuario" class="text-white">Usuário:</label>
+                        <input pInputText id="usuario" />
+                    </div>
+                    <div class="flex flex-col container-senha mt-3">
+                        <label for="senha" class="text-white">Senha:</label>
+                        <input pInputText type="password" placeholder="*******" id="senha" />
+                    </div>
+                    <div class="flex mt-10 w-full justify-center container-botao-logar">
+                        <p-button label="Logar" [raised]="true" severity="secondary" />
+                    </div>
+                </div> -->
+                <div class="flex justify-center flex-col container-authenticator mt-20">
+                    <div class="flex justify-center">
+                        <img src="assets/img/authenticator.png" class="w-[100px] h-[100px]" alt="">
+                    </div>
+                    <div class="flex flex-col container-codigo">
+                        <label for="codigo" class="text-white mb-2">Informe o código do Authenticator:</label>
+                        <input pInputText id="codigo" class="text-center" placeholder="00000000" />
+                    </div>
+                    <div class="flex mt-10 w-full justify-center container-botao-logar">
+                        <p-button label="Confirmar" [raised]="true" severity="secondary" />
+                    </div>
+                    <div class="flex justify-start mt-10">
+                        <i class="material-icons text-white"
+                        tooltipStyleClass="custom-tooltip" pTooltip="Voltar"
+                            tooltipPosition="right">arrow_back</i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
