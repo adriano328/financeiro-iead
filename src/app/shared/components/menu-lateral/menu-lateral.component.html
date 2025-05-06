@@ -1,0 +1,11 @@
+<div class="flex flex-col container-menu bg-red-500 shadow-lg w-[100px]">
+    <div class="flex justify-center container-logo">
+        <img src="assets/img/logo.png" class="mt-2" width="80">
+    </div>
+    <div class="container-icones mt-12">
+        <div class="flex justify-center flex-col items-center icone cursor-pointer mb-5" *ngFor="let item of icones">
+            <i class="material-icons text-white mb-1 text-[20px]">{{ item.icone }}</i>
+            <span class="text-[13px] text-center text-white">{{ item.nome }}</span>
+        </div>
+    </div>
+</div>
